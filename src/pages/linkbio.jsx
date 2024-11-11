@@ -56,7 +56,7 @@ export default function Home() {
 
           {/* Parte inferior com botões e ícones */}
           <div className="d-flex flex-column justify-content-center align-items-center p-4" 
-               style={{ backgroundColor: 'white', borderRadius: '0 8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', height: '80%' }}>
+               style={{ backgroundColor: 'white', borderRadius: '0 0px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', height: '80%' }}>
             <div className="d-flex flex-column gap-3 w-100" style={{ maxWidth: '300px' }}>
               <a href="/" className="btn btn-dark d-flex align-items-center gap-2">
                 <FaStore /> Quero ser Membro
