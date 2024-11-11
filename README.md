@@ -31,16 +31,16 @@
   <h2>Como Executar</h2>
   <ol>
     <li><strong>Clone o repositório</strong>:
-      <pre><code>git clone &lt;URL_DO_REPOSITORIO&gt;</code></pre>
+      <pre><code>git clone https://github.com/sucloudflare/mtrek01/</code></pre>
     </li>
     <li><strong>Navegue até o diretório do projeto</strong>:
-      <pre><code>cd nome-do-diretorio</code></pre>
+      <pre><code>cd mtrek01</code></pre>
     </li>
     <li><strong>Instale as dependências</strong>:
       <pre><code>npm install</code></pre>
     </li>
     <li><strong>Execute a aplicação</strong>:
-      <pre><code>npm start</code></pre>
+      <pre><code>npm run dev</code></pre>
       <p>A aplicação estará disponível em <a href="http://localhost:3000">http://localhost:3000</a>.</p>
     </li>
   </ol>
