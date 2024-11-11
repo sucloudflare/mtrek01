@@ -1,0 +1,149 @@
+/* Estilos principais */
+.purpleSection {
+  background-color: #3b0a45;
+  color: white;
+  position: relative;
+  padding: 40px;
+  text-align: left;
+}
+
+
+.purpleSection h2 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-size: 24px;
+}
+
+/* Quando o h2 se torna visível */
+.purpleSection h2.visible {
+  opacity: 1;
+}
+
+.linksSection {
+  background-color: #f8f4f9;
+  color: #3b0a45;
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  animation: fadeIn 0.5s ease;
+}
+
+.linksSection h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.linksSection p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Botão principal */
+.mainButton {
+  background-color: #3b0a45;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.mainButton:hover {
+  background-color: transparent;
+  color: #3b0a45;
+  border: 2px solid #3b0a45;
+}
+
+/* Botões do link */
+.linkButton {
+  background-color: transparent;
+  color: #3b0a45;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: #3b0a45;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animações */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+  .col-12 {
+    height: 100vh;
+  }
+  .p-4 {
+    padding: 1rem;
+  }
+  /* A parte superior (menu) vai ter entre 350px e 450px de altura */
+  .p-4 {
+    height: 350px;
+  }
+  /* Ajustar a parte inferior para ocupar o restante da tela */
+  .d-flex.flex-column {
+    flex: 1;
+  }
+}
+
+/* Para telas entre 600px e 1000px */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .p-4 {
+    height: 450px; /* Ajuste a altura para telas médias */
+  }
+}
+
+/* Para telas maiores que 1000px */
+@media (min-width: 1000px) {
+  .p-4 {
+    height: 600px; /* Ajuste a altura para telas grandes */
+  }
+}
